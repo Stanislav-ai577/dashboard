@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="src/style/style.css">
+   <title>Dashboard</title>
+</head>
+
+<body>
+   <div class="wrapper">
+
+      <nav class="nav">
+         <a class="nav__logo" href="#"></a>
+         <div class="nav__location">
+            <a href="#" class="nav__link nav__link--home"></a>
+            <a href="#" class="nav__link nav__link--news"></a>
+            <a href="#" class="nav__link nav__link--friends"></a>
+            <a href="#" class="nav__link nav__link--messages"></a>
+            <a href="#" class="nav__link nav__link--media"></a>
+            <a href="#" class="nav__link nav__link--statistics active"></a>
+            <a href="#" class="nav__link nav__link--settings"></a>
+         </div>
+
+         <label class="nav__decoration">
+            <input type="checkbox" class="nav__checkbox">
+            <span class="nav__box"></span>
+         </label>
+
+      </nav>
+
+      <div class="main">
+
+         <header class="header">
+            <div class="header__container">
+               <h1 class="header__title">Statictics</h1>
+               <input type="text" class="header__search" placeholder="search">
+               <a href="#" class="header__icon"></a>
+            </div>
+            <div class="header__account">
+               <h3 class="header__name">Anya</h3>
+               <a href="#" class="header__icon"></a>
+            </div>
+         </header>
+
+         <div class="rect">
+            <div class="friends">
+               <h2 class="rect__title">Friends</h2>
+               <div class="rect__bundle"></div>
+               <p class="rect__text">271 people</p>
+               <div class="rect__numbers">+ 0,7%</div>
+            </div>
+
+            <div class="visitors">
+               <h2 class="rect__title">Visitors</h2>
+               <div class="rect__bundle"></div>
+               <p class="rect__text">69 people</p>
+               <div class="rect__numbers--middle">- 1,7%</div>
+            </div>
+
+            <div class="followers">
+               <h2 class="rect__title">Followers</h2>
+               <div class="rect__bundle"></div>
+               <p class="rect__text">288 people</p>
+               <div class="rect__numbers">+ 1%</div>
+            </div>
+
+            <div class="audience">
+               <div class="audience__container">
+                  <h2 class="card__title ">Audience reach</h2>
+                  <div class="audience__date">31/01/2020 – 06/02/2020</div>
+                  <div class="audience__input">
+                     <label class="box__container">
+                        <input type="radio" checked="checked" name="box">
+                        <span class="audience__checkmark"></span> Total
+                     </label>
+                     <label class="box__container">
+                        <input type="radio" name="box">
+                        <span class="audience__done box--pink"></span> Follower
+                     </label>
+                  </div>
+               </div>
+               <div class="graph__container">
+                  <div class="audience__graph"></div>
+               </div>
+            </div>
+
+            <div class="device">
+               <h2 class="rect__title">Reach by device</h2>
+               <div class="device__container">
+                  <div class="device__chart">
+                     <p class="device__percent">86%</p>
+                  </div>
+                  <div class="device__names">
+                     <p class="device__name">Desktop</p>
+                     <p class="device__name">Mobile views</p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="gender">
+               <div class="gender__header">
+                  <h2 class="rect__title">Gender / Age</h2>
+                  <div class="gender__names">
+                     <p class="gender__name">women</p>
+                     <p class="gender__name">men</p>
+                  </div>
+               </div>
+               <div class="graph__container">
+                  <div class="gender__graph"></div>
+               </div>
+            </div>
+
+            <div class="geo">
+               <h2 class="rect__title geo__title"> Geo</h2>
+               <div class="geo__names">
+                  <a href="#" class="geo__country">Country</a>
+                  <a href="#" class="geo__city">City</a>
+               </div>
+               <div class="geo__list">
+                  <div class="geo__item russia">Russia</div>
+                  <progress class="geo__bar" max="100" value="94"></progress>
+                  <div class="geo__item ukraine">Ukraine</div>
+                  <progress class="geo__bar" max="100" value="5"></progress>
+                  <div class="geo__item mongolia">Mongolia</div>
+                  <progress class="geo__bar" max="100" value="3"></progress>
+                  <div class="geo__item china">China</div>
+                  <progress class="geo__bar" max="100" value="13"></progress>
+                  <div class="geo__item usa">USA</div>
+                  <progress class="geo__bar" max="100" value="5"></progress>
+                  <div class="geo__item other">Other</div>
+                  <progress class="geo__bar" max="100" value="7"></progress>
+               </div>
+            </div>
+         </div>
+         </main>
+      </div>
+</body>
+
+</html>
