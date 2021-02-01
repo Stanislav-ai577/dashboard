@@ -1,0 +1,127 @@
+.geo {
+   display: inline-flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   @include grid-area(geo);
+   @include card-container (381px);
+
+
+   .geo__title {
+       display: inline;
+   }
+
+   .geo__names{
+       display: inline;
+       margin-top: 3px;
+   }
+
+   .geo__country {
+       @include text (12px, $primary-color);
+       font-family: 'Gilroy SemiBold';
+       text-decoration: none;
+   }
+
+   .geo__city {
+       @include text (12px, $secondary-color);
+       text-decoration: none;
+       margin-left: 10px;
+   }
+
+
+   .geo__list {
+       display: flex;
+       position: relative;
+       flex-direction: column;
+       flex-wrap: wrap;
+       width: 360px;
+       height: 170px;
+       @include text (12px, $primary-color);
+   }
+
+   .geo__item {
+       display: inline;
+       margin-top: 20px;
+       margin-right: 20px;
+   }
+
+   .geo__bar {
+       background-color: #EFF3F9;
+       border-radius: 9px;
+   }
+
+   .geo__bar::-webkit-progress-bar{
+       background-color: #EFF3F9;
+       border-radius: 9px;
+   }
+
+   .geo__bar::-webkit-progress-value {
+       border-radius: 9px;
+       background-color: $blue;
+   }
+
+   .russia {
+       display: inline;
+
+       .geo:after {
+           content: '94%';
+           position: absolute;
+           left: 28%;
+           color: $secondary-color;
+       }
+   }
+
+   .ukraine {
+       display: inline;
+
+       .geo:after {
+           content: '0,20%';
+           position: absolute;
+           left: 25%;
+           color: $secondary-color;
+       }
+   }
+
+   .mongolia {
+       display: inline;
+
+       .geo:after {
+           content: '0,13%';
+           position: absolute;
+           left: 26%;
+           color: $secondary-color;
+       }
+   }
+
+   .china {
+       display: inline;
+
+       .geo:after {
+           content: '0,26%';
+           position: absolute;
+           left: 75%;
+           color: $secondary-color;
+       }
+   }
+
+   .usa {
+       display: inline;
+
+       .geo:after {
+           content: '0,20%';
+           position: absolute;
+           left: 75%;
+           color: $secondary-color;
+       }
+   }
+
+   .other {
+       display: inline;
+
+       .geo:after {
+           content: '1.37%';
+           position: absolute;
+           left: 76%;
+           color: $secondary-color;
+       }
+   }
+}

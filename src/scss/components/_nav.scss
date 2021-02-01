@@ -1,0 +1,118 @@
+.nav {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   height: 880px;
+   width: 98px;
+   background-color: white;
+   border-bottom-left-radius: 14px;
+   border-top-left-radius: 14px;
+   padding: 46px 24px;
+   overflow: hidden;
+   }
+
+
+       .nav__logo {
+           width: 42px;
+           height: 44px;
+           background: url(/src/img/nav-img/vk-logo.png) no-repeat center/contain;
+       }
+
+       .nav__location {
+           position: relative;
+           height: 430px;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: space-between;
+           }
+
+
+           .nav__link--home {
+               background: url(/src/img/nav-img/home.png);            
+           }
+   
+           .nav__link--news {
+               background: url(/src/img/nav-img/news.png);              
+           }
+   
+           .nav__link--friends {
+               background: url(/src/img/nav-img/friends.png);          
+           }
+   
+           .nav__link--messages {
+               background: url(/src/img/nav-img/messenge.png);  
+           }
+   
+           .nav__link--media {
+               background: url(/src/img/nav-img/play.png);
+           }
+   
+           .nav__link--statistics {
+               background: url(/src/img/nav-img/statistics.png); 
+           }
+   
+           .nav__link--settings {
+               background: url(/src/img/nav-img/setting.png);
+           }
+
+           .nav__link  {
+               width: 98px;
+               height: 50px;
+               background-position: center;
+               background-repeat: no-repeat;
+               border-bottom: none;
+           }
+
+           .nav__link :hover {
+               cursor: pointer;
+               filter: invert(51%) sepia(76%) saturate(330%) hue-rotate(201deg) brightness(89%) contrast(89%);
+           }
+           
+           .nav__link :hover::before {
+               left: -45px;
+               display: block;
+           }
+
+       .nav__decoration {
+           input[type='checkbox']{
+               visibility: hidden;
+               display: none;
+           }
+
+           .nav__box {
+               display: block;
+               position: relative;
+               width: 60px;
+               height: 30px;
+               background: #ffffff;
+               border: 1px solid #4F4F4F;
+               cursor: pointer;
+               border-radius: 50px;
+               transition: ease-in .6s;
+
+           }
+
+           input[type='checkbox']:checked ~ .nav__box {
+               background-color: #7F7FD5;
+           }
+
+           .nav__box:before {
+               content: '';
+               position: absolute;
+               top: 4px;
+               left: 5px;
+               background-color: #7F7FD5;
+               width: 20px;
+               height: 20px;
+               border-radius: 50%;
+               transition: .6s;
+           }
+
+           input[type='checkbox']:checked ~ .nav__box:before {
+               transform: translateX(30px);
+               background-color: #ffffff;   
+       }
+}

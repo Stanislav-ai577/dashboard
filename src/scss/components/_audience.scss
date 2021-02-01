@@ -1,0 +1,94 @@
+.audience {
+    @include grid-area(audience);
+    @include card-container(768px);
+
+    .audience__container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 29px;
+        }
+    }
+
+    .audience__date {
+        @include text(12px, $primary-color);
+        margin-left: 138px;
+    }
+
+    .audience__date::before {
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: 505px;
+        width: 5px;
+        height: 5px;
+        transform: rotate(45deg);
+        border-right: 1px solid $primary-color;
+        border-bottom: 1px solid $primary-color;
+    }  
+    
+    .audience__input {
+        display: flex;
+        justify-content: space-between;
+        width: 104px;
+        margin-right: 50px;
+    }
+
+    .box__container {
+        position: relative;
+        @include text (12px, $primary-color);
+        font-family: 'Gilroy SemiBold';
+        cursor: pointer;
+    }
+
+    .box__container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+
+      .audience__checkmark {
+        position: absolute;
+        top: 3px;
+        left: -21px;
+        height: 16px;
+        width: 16px;
+        border-radius: 5px;
+        border: 1.5px solid #7F7FD5;
+      }
+
+      .box--red {
+        border: 1.5px solid #E786D7;
+      }
+
+      .audience__checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+
+      .box__container input:checked ~ .audience__checkmark:after {
+        display: block;
+      }
+
+      .audience__checkmark:after {
+        left: 4px;
+        top: 2px;
+        width: 3px;
+        height: 5px;
+        border: solid #7F7FD5;
+        border-width: 0 1px 1px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+
+      .audience__graph {
+        width: 716px;
+        height: 141px;
+        background: url(/src/img/drawing/audience.png) no-repeat center/contain;
+    }

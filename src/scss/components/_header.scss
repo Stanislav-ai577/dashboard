@@ -1,0 +1,107 @@
+.header {
+   display: flex;
+   position: relative;
+   align-items: center;
+   justify-content: space-between;
+   max-width: 1200px;
+   min-height: 50px;
+   padding: 43px 38px 15px 49px;
+   border-top-right-radius: 18px;
+   background-color: $secondary-background-color;
+
+   .header__container {
+       position: relative;
+       display: inline-flex;
+       align-items: center;
+   }
+
+   .header__container::before {
+       content: '';
+       position: absolute;
+       top: 13px;
+       left: 171px;
+       width: 10px;
+       height: 10px;
+       background: url(/src/img/header-img/glass.svg) no-repeat center/contain;
+   }
+
+   .header__title {
+       font-family: 'Gilroy Bold';
+       font-size: 30px;
+       line-height: 36px;
+       color: $primary-color;
+   }
+
+
+   .header__search {
+       width: 153px;
+       height: 32px;
+       border-radius: 8px;
+       border: 1px solid $border-color;
+       font-family: 'Gilroy Bold';
+       font-size: 12px;
+       line-height: 14px;
+       color: $primary-color;
+       margin-left: 45px;
+       padding-left: 38px;
+       text-transform: capitalize;
+   }
+
+   .header__search::placeholder {
+       font-family: 'Gilroy';
+       color: $secondary-color;
+   }
+
+   .header__icon {
+       height: 22px;
+       width: 22px;
+       background: url(/src/img/header-img/bell.png) no-repeat center/contain;
+       margin-left: 25px;
+   }
+
+   .header__icon:active {
+       position: relative;
+       top: 2px;
+   }
+
+   .header__account {
+       display: inline-flex;
+       position: relative;
+       align-items: center;
+   }
+
+   .header__name {
+   font-family: 'Gilroy SemiBold';
+   font-size: 20px;
+   color: $primary-color;
+  } 
+
+  .header__avatar {
+      width: 50px;
+      height: 50px;
+      background-color: white;
+      background: url(/src/img/header-img/avatar.svg) no-repeat center/contain;
+      margin-left: 13px;
+      margin-right: 25px;
+      filter: drop-shadow(1px 1px 0 $border-color) 
+         drop-shadow(-1px -1px 0 $border-color);
+  }
+   
+  .header__avatar::before {
+      content: '';
+      position: absolute;
+      top: 19px;
+      right: -16px;
+      width: 5px;
+      height: 5px;
+      transform: rotate(45deg);
+      border-right: 2px solid $primary-color;
+      border-bottom: 2px solid $primary-color;
+      transition: all 0.1s ease-in;
+  }
+
+  .header__avatar:focus::before {
+       transform: rotate(-45deg);
+  }
+
+}
