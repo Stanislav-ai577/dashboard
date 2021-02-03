@@ -22,7 +22,7 @@
        left: 171px;
        width: 10px;
        height: 10px;
-       background: url(/src/img/header-img/glass.svg) no-repeat center/contain;
+       background: url(../img/header-img/glass.svg) no-repeat center/contain;
    }
 
    .header__title {
@@ -55,7 +55,7 @@
    .header__icon {
        height: 22px;
        width: 22px;
-       background: url(/src/img/header-img/bell.png) no-repeat center/contain;
+       background: url(../img/header-img/bell.png) no-repeat center/contain;
        margin-left: 25px;
    }
 
@@ -80,7 +80,7 @@
       width: 50px;
       height: 50px;
       background-color: white;
-      background: url(/src/img/header-img/avatar.svg) no-repeat center/contain;
+      background: url(../img/header-img/avatar.svg) no-repeat center/contain;
       margin-left: 13px;
       margin-right: 25px;
       filter: drop-shadow(1px 1px 0 $border-color) 

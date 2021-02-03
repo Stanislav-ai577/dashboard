@@ -477,7 +477,7 @@ textarea {
 .audience__graph {
   width: 716px;
   height: 141px;
-  background: url(/src/img/drawing/audience.png) no-repeat center/contain;
+  background: url(../img/drawing/audience.png) no-repeat center/contain;
 }
 
 .rect {
@@ -532,7 +532,7 @@ textarea {
   position: relative;
   width: 121px;
   height: 121px;
-  background: url(/src/img/drawing/ellips-blue.png) no-repeat center/cover;
+  background: url(../img/drawing/ellips-blue.png) no-repeat center/cover;
   font-family: 'Gilroy';
   font-size: 12px;
   line-height: 24px;
@@ -551,7 +551,7 @@ textarea {
   left: 77px;
   width: 61px;
   height: 47px;
-  background: url(/src/img/drawing/triangle-pink.png) no-repeat center/contain;
+  background: url(../img/drawing/triangle-pink.png) no-repeat center/contain;
 }
 
 .device__chart::after {
@@ -625,7 +625,7 @@ textarea {
 .nav__logo {
   width: 42px;
   height: 44px;
-  background: url(/src/img/nav-img/vk-logo.png) no-repeat center/contain;
+  background: url(../img/nav-img/vk-logo.png) no-repeat center/contain;
 }
 
 .nav__location {
@@ -647,31 +647,31 @@ textarea {
 }
 
 .nav__link--home {
-  background: url(/src/img/nav-img/home.png);
+  background: url(../img/nav-img/home.png);
 }
 
 .nav__link--news {
-  background: url(/src/img/nav-img/news.png);
+  background: url(../img/nav-img/news.png);
 }
 
 .nav__link--friends {
-  background: url(/src/img/nav-img/friends.png);
+  background: url(../img/nav-img/friends.png);
 }
 
 .nav__link--messages {
-  background: url(/src/img/nav-img/messenge.png);
+  background: url(../img/nav-img/messenge.png);
 }
 
 .nav__link--media {
-  background: url(/src/img/nav-img/play.png);
+  background: url(../img/nav-img/play.png);
 }
 
 .nav__link--statistics {
-  background: url(/src/img/nav-img/statistics.png);
+  background: url(../img/nav-img/statistics.png);
 }
 
 .nav__link--settings {
-  background: url(/src/img/nav-img/setting.png);
+  background: url(../img/nav-img/setting.png);
 }
 
 .nav__link {
@@ -762,7 +762,7 @@ textarea {
   height: 806px;
   top: 0;
   left: calc(50% - 810px);
-  background: url(/src/img/drawing/blob.png) no-repeat center/cover;
+  background: url(../img/drawing/blob.png) no-repeat center/cover;
   z-index: -1;
 }
 
@@ -847,7 +847,7 @@ textarea {
 .gender__graph {
   width: 631px;
   height: 167px;
-  background: url(/src/img/drawing/Gender.png) no-repeat center/cover;
+  background: url(../img/drawing/Gender.png) no-repeat center/cover;
 }
 
 .geo {
@@ -1042,7 +1042,7 @@ textarea {
   left: 171px;
   width: 10px;
   height: 10px;
-  background: url(/src/img/header-img/glass.svg) no-repeat center/contain;
+  background: url(../img/header-img/glass.svg) no-repeat center/contain;
 }
 
 .header .header__title {
@@ -1089,7 +1089,7 @@ textarea {
 .header .header__icon {
   height: 22px;
   width: 22px;
-  background: url(/src/img/header-img/bell.png) no-repeat center/contain;
+  background: url(../img/header-img/bell.png) no-repeat center/contain;
   margin-left: 25px;
 }
 
@@ -1118,7 +1118,7 @@ textarea {
   width: 50px;
   height: 50px;
   background-color: white;
-  background: url(/src/img/header-img/avatar.svg) no-repeat center/contain;
+  background: url(../img/header-img/avatar.svg) no-repeat center/contain;
   margin-left: 13px;
   margin-right: 25px;
   -webkit-filter: drop-shadow(1px 1px 0 #EBEBEB) drop-shadow(-1px -1px 0 #EBEBEB);

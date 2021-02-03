@@ -16,7 +16,7 @@
    position: relative;
    width: 121px;
    height: 121px;
-   background: url(/src/img/drawing/ellips-blue.png) no-repeat center/cover;
+   background: url(../img/drawing/ellips-blue.png) no-repeat center/cover;
    @include text (12px, #FDFDFF);
 }
 
@@ -31,7 +31,7 @@
    left: 77px;
    width: 61px;
    height: 47px;
-   background: url(/src/img/drawing/triangle-pink.png) no-repeat center/contain;
+   background: url(../img/drawing/triangle-pink.png) no-repeat center/contain;
 }
 
 .device__chart::after{
